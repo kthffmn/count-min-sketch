@@ -40,17 +40,28 @@ sketch.m
 ```ruby
 require 'count_min_sketch'
 
-name = "Guy Fieri"
-restaurant = "Guy's American Kitchen and Bar"
-
 k = 30
 m = 128
+
 sketch = CountMinSketch::Counter.new(k, m)
 
 sketch.k
 # => 30
 sketch.m
 # => 128
+```
+
+There are two methods: `insert`, which adds data and returns the count, and `get_count`. The former takes one required argument, the data which you want to add to the sketch, and an optional second argument, the number of times you would like to add it. This defaults to `1`.
+
+```ruby
+require 'count_min_sketch'
+
+k = 30
+m = 128
+sketch = CountMinSketch::Counter.new(k, m)
+
+name = "Guy Fieri"
+restaurant = "Guy's American Kitchen and Bar"
 
 sketch.insert(name)
 sketch.insert(restaurant, 2)
