@@ -22,7 +22,7 @@ Or install it yourself as:
 
 Accepts two optional arguments, `k`, the number of hash functions, and `m`, the column size. These default to 10 and 100000 respectively.
 
-Without Arguments:
+**Without Arguments**
 
 ```ruby
 require 'count_min_sketch'
@@ -36,7 +36,7 @@ sketch.m
 # => 100000
 ```
 
-With Arguments:
+**With Arguments**
 
 ```ruby
 require 'count_min_sketch'
