@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ktahoffman@gmail.com"]
   spec.summary       = "Count-Min Sketch implementation that relies on nashby's CityHash gem."
   spec.description   = "Implementation of Graham Cormode and S. Muthu Muthukrishnan's probabilistic sub-linear space streaming algorithm."
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/kthffmn/countminsketch"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
