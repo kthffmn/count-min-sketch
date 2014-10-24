@@ -1,6 +1,6 @@
-# CountMinSketch
+# Count-Min Sketch
 
-Ruby implementation, relying on [nashby's](https://github.com/nashby) [CityHash gem](https://github.com/nashby/cityhash), of Graham Cormode and S. Muthu Muthukrishnan's probabilistic sub-linear space streaming algorithm.
+A Ruby implementation of Graham Cormode and S. Muthu Muthukrishnan's probabilistic sub-linear space streaming algorithm. Relies on [nashby's](https://github.com/nashby) [CityHash gem](https://github.com/nashby/cityhash). To read more about count-min sketches, see the [Wiki page](http://en.wikipedia.org/wiki/Count%E2%80%93min_sketch).
 
 ## Install
 
