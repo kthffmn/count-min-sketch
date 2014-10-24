@@ -1,3 +1,4 @@
+require 'cityhash'
 require "count_min_sketch/version"
 
 module CountMinSketch
