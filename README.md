@@ -31,7 +31,6 @@ sketch = CountMinSketch::Counter.new
 
 sketch.k
 # => 10
-
 sketch.m
 # => 100000
 ```
