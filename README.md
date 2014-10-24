@@ -20,7 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-Accepts two arguments, `k` being the number of hash functions and `m` being the array size.
+Accepts two optional arguments, `k`, the number of hash functions, and `m`, the column size. These default to 10 and 100000 respectively.
+
+Without Arguments:
+
+```ruby
+require 'count_min_sketch'
+
+sketch = CountMinSketch::Counter.new
+
+sketch.k
+# => 10
+
+sketch.m
+# => 100000
+```
+
+With Arguments:
 
 ```ruby
 require 'count_min_sketch'
@@ -31,6 +47,11 @@ restaurant = "Guy's American Kitchen and Bar"
 k = 30
 m = 128
 sketch = CountMinSketch::Counter.new(k, m)
+
+sketch.k
+# => 30
+sketch.m
+# => 128
 
 sketch.insert(name)
 sketch.insert(restaurant, 2)
